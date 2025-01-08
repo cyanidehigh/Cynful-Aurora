@@ -5,10 +5,10 @@
 		<description>This content is all homebrews from various universes</description>
 		<author>Collaborations with Cyanidehigh and various authors</author>
 		<update version="0.1.0">
-			<file name="CynfulsRepo.index" url="https://raw.githubusercontent.com/cyanidehigh/Cynful-Aurora.index" />
+			<file name="CynfulsRepo.index" url="https://raw.githubusercontent.com/cyanidehigh/Cynful-Aurora.index"/>
 		</update>
 	</info>
 	<files>
-		<file name="bleach-handbook.index" url="https://raw.githubusercontent.com/cyanidehigh/Cynful-Aurora/bleach-handbook.index" />
+		<file name="bleach-handbook.index" url="https://raw.githubusercontent.com/cyanidehigh/Cynful-Aurora/bleach-handbook.index"/>
 	</files>
 </index>
