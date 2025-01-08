@@ -4,7 +4,7 @@
 		<name>Bleach 5E</name>
 		<description>Join the divisions of the soul society in this campaign sourcebook for the world's greatest roleplaying game</description>
 		<author>Reece O'neill</author>
-		<update version="0.1">
+		<update version="0.1.0">
 			<file name="bleach-handbook.index" url="https://raw.githubusercontent.com/cyanidehigh/Cynful-Aurora/bleach-handbook.index"/>
 		</update>
 	</info>
