@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Shinigami</name>
+        <description>Spiritual warriors who maintain the balance between life and death.</description>
+        <author url="https://bleach-dnd.index">Cynful Studio</author>
+        <update version="1.0">
+            <file name="race-shinigami.xml" url="https://bleach-dnd.index/races/race-shinigami.xml"/>
+        </update>
+    </info>
+
+    <element name="Shinigami" type="Race" source="Bleach DND 5E" id="ID_RACE_SHINIGAMI">
+    <description>
+      <p class="flavor">Shinigami, or Soul Reapers, are spiritual beings who maintain the balance of souls between the mortal world and the afterlife. They wield Zanpakutō, blades that embody their very soul, and protect mortals from Hollows—corrupted spirits that devour souls.</p>
+
+      <h4>SPIRITUAL NATURE</h4>
+      <p>Each Shinigami possesses a unique Zanpakutō and spiritual energy, known as Reiatsu. This energy fuels their combat prowess, abilities, and movement through the worlds of the living and the dead.</p>
+
+      <h4>SHINIGAMI TRAITS</h4>
+      <p>
+        <span class="feature">Ability Score Increase.</span>Your Wisdom score increases by 2, and your Dexterity score increases by 1.<br/>
+        <span class="feature">Age.</span>Shinigami mature at the same rate as humans but can live for centuries due to their spiritual essence.<br/>
+        <span class="feature">Alignment.</span>Shinigami value order and duty, tending toward lawful alignments, though individuality varies by division.<br/>
+        <span class="feature">Size.</span>Shinigami are similar in build to humans. Your size is Medium.<br/>
+        <span class="feature">Speed.</span>Your base walking speed is 30 feet.<br/>
+        <span class="feature">Languages.</span>You can speak, read, and write Common and Spiritual Tongue.<br/>
+      </p>
+
+      <h4>RACIAL FEATURES</h4>
+      <p>
+        <span class="feature">Spiritual Awareness.</span>You can sense spiritual entities. You have advantage on Wisdom (Perception) checks to detect ethereal or undead creatures.<br/>
+        <span class="feature">Reiatsu Control.</span>Once per long rest, as a bonus action, you can empower your attacks with spiritual energy. For 1 minute, you add your proficiency bonus to attack and damage rolls.<br/>
+        <span class="feature">Soul Form.</span>As an action, you can separate from your physical body (if applicable), entering a spirit state for up to 10 minutes. In this state, you can pass through non-magical barriers and see into the Ethereal Plane. You cannot interact with solid matter. Once per long rest.<br/>
+        <span class="feature">Zanpakutō Affinity.</span>You gain proficiency with longswords, which serve as your Zanpakutō. When wielding your Zanpakutō, you may use Wisdom instead of Strength or Dexterity for attack and damage rolls.<br/>
+      </p>
+    </description>
+
+    <sheet display="false"/>
+    <setters>
+      <set name="height" modifier="2d8">5'4"</set>
+      <set name="weight" modifier="2d4">130 lb.</set>
+    </setters>
+
+    <rules>
+      <stat name="wisdom" value="2"/>
+      <stat name="dexterity" value="1"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM"/>
+      <grant type="Language" id="ID_LANGUAGE_COMMON"/>
+      <grant type="Language" id="ID_LANGUAGE_SPIRITUAL_TONGUE"/>
+      <grant type="Weapon Proficiency" id="ID_PROFICIENCY_WEAPON_LONGSWORD"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_SPIRITUAL_AWARENESS"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_REIATSU_CONTROL"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_SOUL_FORM"/>
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_ZANPAKUTO_AFFINITY"/>
+    </rules>
+  </element>
+
+  <element name="Spiritual Awareness" type="Racial Trait" source="Bleach DND 5E" id="ID_RACIAL_TRAIT_SPIRITUAL_AWARENESS">
+    <description>
+      <p>You can sense spirits and invisible entities. You have advantage on Wisdom (Perception) checks to detect ethereal or undead creatures.</p>
+    </description>
+    <sheet>
+      <description>Advantage on Perception checks to detect ethereal or undead entities.</description>
+    </sheet>
+  </element>
+
+  <element name="Reiatsu Control" type="Racial Trait" source="Bleach DND 5E" id="ID_RACIAL_TRAIT_REIATSU_CONTROL">
+    <description>
+      <p>Once per long rest, you can channel spiritual energy to empower your strikes. For 1 minute, add your proficiency bonus to attack and damage rolls.</p>
+    </description>
+    <sheet>
+      <description>Once per long rest, add proficiency bonus to attack and damage rolls for 1 minute.</description>
+    </sheet>
+  </element>
+
+  <element name="Soul Form" type="Racial Trait" source="Bleach DND 5E" id="ID_RACIAL_TRAIT_SOUL_FORM">
+    <description>
+      <p>As an action, you can separate from your body and become a spirit for 10 minutes. You can pass through non-magical barriers and see into the Ethereal Plane but cannot interact with solid matter. You can use this feature once per long rest.</p>
+    </description>
+    <sheet>
+      <description>Once per long rest, enter spirit form for 10 minutes; pass through barriers, see the Ethereal Plane.</description>
+    </sheet>
+  </element>
+
+  <element name="Zanpakutō Affinity" type="Racial Trait" source="Bleach DND 5E" id="ID_RACIAL_TRAIT_ZANPAKUTO_AFFINITY">
+    <description>
+      <p>You are proficient with longswords, your Zanpakutō. You may use Wisdom instead of Strength or Dexterity for attack and damage rolls when wielding it.</p>
+    </description>
+    <sheet>
+      <description>Use Wisdom for longsword attack and damage rolls; counts as Zanpakutō.</description>
+    </sheet>
+  </element>
+</elements>
+<info>
+    <author url="https://bleach-dnd.index">Bleach DND Team</author>
+    <update version="1.0">
+        <file name="race-shinigami.xml" url="https://bleach-dnd.index/races/race-shinigami.xml"/>
+    </update>
+</info>
