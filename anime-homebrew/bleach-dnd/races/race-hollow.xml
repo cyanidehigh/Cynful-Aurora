@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<elements>
+    <info>
+        <name>Hollow</name>
+        <description>Corrupted spirits consumed by hunger, transformed into monstrous beings of instinct and power.</description>
+        <author url="https://github.com/cyanidehigh/Cynful-Aurora">Cynful Aurora Project</author>
+        <update version="1.0">
+            <file name="races/race-hollow.xml" url="https://raw.githubusercontent.com/cyanidehigh/Cynful-Aurora/main/bleach-dnd/races/race-hollow.xml"/>
+        </update>
+    </info>
+    
+    <element name="Hollow" type="Race" source="Bleach DND 5E" id="ID_RACE_HOLLOW">
+        <description>
+            <p class="flavor">Hollows are souls that failed to pass on peacefully and were consumed by their own despair, transforming into predatory spiritual creatures. Despite their monstrous nature, some regain fragments of sentience and harness their powers for purpose beyond instinct.</p>
+            
+            <h4>CONSUMED SPIRIT</h4>
+            
+            <p>Born from pain and hunger, Hollows feed on spiritual energy to sustain themselves. Their forms vary widely, from animalistic beasts to humanoid revenants, all marked by a mask hiding their lost identity.</p>
+            
+            <h4>HOLLOW TRAITS</h4>
+            
+            <p>
+                <span class="feature">Ability Score Increase.</span>Your Strength score increases by 2, and your Constitution score increases by 1.<br/>
+                <span class="feature">Age.</span>Hollows do not age naturally, persisting indefinitely unless purified or destroyed.<br/>
+                <span class="feature">Alignment.</span>Many Hollows lean toward chaotic alignments, but those with restored minds may follow any path.<br/>
+                <span class="feature">Size.</span>Your size is Medium.<br/>
+                <span class="feature">Speed.</span>Your base walking speed is 30 feet.<br/>
+                <span class="feature">Languages.</span>You can speak, read, and write Common and Hollow Speech.<br/>
+            </p>
+            
+            <h4>RACIAL FEATURES</h4>
+            
+            <p>
+                <span class="feature">Devourer’s Essence.</span>When you reduce a creature to 0 hit points, you may consume its spiritual residue to regain hit points equal to your Constitution modifier (minimum 1). You can use this feature a number of times equal to your proficiency bonus per long rest.<br/>
+                <span class="feature">Cero Blast.</span>You can unleash a condensed burst of spiritual energy. As an action, you fire a beam of energy at a creature within 30 feet. The target must succeed on a Dexterity saving throw (DC 8 + your proficiency bonus + your Constitution modifier) or take 1d10 force damage. The damage increases by 1d10 at 5th, 11th, and 17th level. You can use this feature a number of times equal to your proficiency bonus per long rest.<br/>
+                <span class="feature">Mask of the Lost.</span>Your Hollow mask shields your essence. You have advantage on saving throws against being frightened and resistance to necrotic damage.<br/>
+                <span class="feature">Monstrous Form.</span>Your Hollow body grants natural weapons. You can make unarmed strikes that deal 1d6 slashing, piercing, or bludgeoning damage (choose when you attack).<br/>
+            </p>
+        </description>
+        
+        <sheet display="false" />
+            <setters>
+                <set name="height" modifier="2d10">6'</set>
+                <set name="weight" modifier="3d6">180 lb.</set>
+            </setters>
+            
+        <rules>
+            <stat name="strength" value="2"/>
+            <stat name="constitution" value="1"/>
+            <stat name="innate speed" value="30" bonus="base"/>
+            <grant type="Size" id="ID_SIZE_MEDIUM"/>
+            <grant type="Language" id="ID_LANGUAGE_COMMON"/>
+            <grant type="Language" id="ID_LANGUAGE_HOLLOW_SPEECH"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_DEVOURERS_ESSENCE"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_CERO_BLAST"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_MASK_OF_THE_LOST"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_MONSTROUS_FORM"/>
+        </rules>
+    </element>
+    
+    <element name="Devourer’s Essence" type="Racial Trait" source="Bleach DND 5E" id="ID_RACIAL_TRAIT_DEVOURERS_ESSENCE">
+        <description>
+            <p>When you reduce a creature to 0 hit points, you may absorb its spiritual energy, regaining hit points equal to your Constitution modifier (minimum 1). Usable a number of times equal to your proficiency bonus per long rest.</p>
+        </description>
+        
+        <sheet>
+            <description>Regain HP equal to CON modifier when killing a creature; uses per long rest equal to proficiency bonus.</description>
+        </sheet>
+    </element>
+    
+    <element name="Cero Blast" type="Racial Trait" source="Bleach DND 5E" id="ID_RACIAL_TRAIT_CERO_BLAST">
+        <description>
+            <p>You can unleash a condensed beam of spiritual energy. As an action, target a creature within 30 ft. It must succeed on a Dexterity saving throw (DC 8 + your proficiency bonus + your Constitution modifier) or take 1d10 force damage. Increases by 1d10 at levels 5, 11, and 17. Uses per long rest equal to your proficiency bonus.</p>
+        </description>
+        
+        <sheet>
+            <description>Action: 30 ft beam, Dex save (DC 8 + prof + CON), 1d10 force damage, scaling by level. Uses = proficiency bonus.</description>
+        </sheet>
+    </element>
+    
+    <element name="Mask of the Lost" type="Racial Trait" source="Bleach DND 5E" id="ID_RACIAL_TRAIT_MASK_OF_THE_LOST">
+        <description>
+            <p>Your Hollow mask guards your essence. You have advantage on saving throws against being frightened and resistance to necrotic damage.</p>
+        </description>
+        
+        <sheet>
+            <description>Advantage vs fear; resistance to necrotic damage.</description>
+        </sheet>
+    </element>
+    
+    <element name="Monstrous Form" type="Racial Trait" source="Bleach DND 5E" id="ID_RACIAL_TRAIT_MONSTROUS_FORM">
+        <description>
+            <p>Your body is a weapon. You can make unarmed strikes that deal 1d6 slashing, piercing, or bludgeoning damage (choose on attack).</p>
+        </description>
+        
+        <sheet>
+            <description>Unarmed strikes deal 1d6 of chosen physical damage type.</description>
+        </sheet>
+    </element>
+</elements>
