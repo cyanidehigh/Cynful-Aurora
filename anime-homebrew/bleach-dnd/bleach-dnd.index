@@ -3,7 +3,7 @@
 <index>
   <info>
     <name>Bleach DND 5E</name>
-    <description>Bleach-inspired expansion for Dungeons & Dragons 5e, adding races, classes, factions, and items from the Bleach universe.</description>
+    <description>Bleach-inspired expansion for Dungeons and Dragons 5e, adding races, classes, factions, and items from the Bleach universe.</description>
     <author url="https://github.com/cyanidehigh/Cynful-Aurora">Cynful Aurora Project</author>
     <update version="1.0">
       <file name="bleach-dnd.index" url="https://raw.githubusercontent.com/cyanidehigh/Cynful-Aurora/main/bleach-dnd/bleach-dnd.index"/>
