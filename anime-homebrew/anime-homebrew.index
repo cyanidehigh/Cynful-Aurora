@@ -3,7 +3,7 @@
 <index>
     <info>
         <name>Anime Homebrew Collection</name>
-        <description>A collection of anime-inspired homebrew expansions for DnD 5E. Includes Bleach DND and future anime-based modules.</description>
+        <description>A collection of anime-inspired home brew expansions for DnD 5E. Includes Bleach DND and future anime-based modules.</description>
         <author url="https://github.com/cyanidehigh/Cynful-Aurora">Cynful Aurora Project</author>
         <update version="1.0">
             <file name="anime-homebrew.index" url="https://raw.githubusercontent.com/cyanidehigh/Cynful-Aurora/main/anime-homebrew.index"/>
